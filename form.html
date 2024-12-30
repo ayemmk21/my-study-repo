@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0"> 
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .rounded-input {
+            border: 1px solid ; /* Border color */
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 5px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+
+        .radio-group {
+            display: inline-block;
+        }
+        .button-group {
+            display: inline-block;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #CD853F;
+            border: none;
+            color: white;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form>
+        <div class="form-group">
+            <label>Text:</label>
+            <input type="text" size="17" class="rounded-input">
+        </div>
+
+        <div class="form-group">
+            <label>Password:</label>
+            <input type="password" size="5" class="rounded-input">
+        </div>
+
+        <div class="form-group">
+            <label>Select:</label>
+            <select style="border-radius: 5px; width: 250px;">
+                <option value="">Please Choose</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Select 2:</label>
+            <select style="border-radius: 5px; width: 135px;">
+                <option value="">Please Choose</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <div class="radio-group">
+                <label></label>
+                <input type="radio" name="radio1" id="yes"> <label for="yes" style="text-align:left;">Yes</label><br>
+                <label>Radio:</label>
+                <input type="radio" name="radio1" id="no"> <label for="no" style="text-align:left;">No</label><br>
+                <label></label>
+                <input type="radio" name="radio1" id="maybe"> <label for="maybe" style="text-align:left;">Maybe So</label><br>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="radio-group">
+                <label>Radio 2:</label>
+                <input type="radio" name="radio2" id="yes2"> <label for="yes2" style="text-align:left; width:20px" >Yes</label>
+                <input type="radio" name="radio2" id="no2"> <label for="no2" style="text-align:left; width:15px">No</label>
+                <input type="radio" name="radio2" id="maybe2"> <label for="maybe2" style="text-align:left;">Maybe So</label><br>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Checkbox:</label>
+            <input type="checkbox">
+        </div>
+
+        <div class="form-group">
+            <label>Checkbox 2:</label>
+            <input type="checkbox">
+        </div>
+
+
+        <div class="form-group">
+            <div class="button-group">   
+                <label>Buttons:</label>     
+                <input type="submit" value="submit" style="border-radius: 5px; width: 60px;">
+                <input type="reset" value="reset" style="border-radius: 5px; width: 50px;">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

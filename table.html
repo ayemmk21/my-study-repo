@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">            
+        <title>CEi Conference Form</title>
+        <style>
+
+            body {
+                font-family: sans-serif;
+            }
+
+            table ,th ,td{
+                border-top: 3px solid #777777;
+                border-bottom: 3px solid #777777;
+                border-right: 2px solid #C1C1C1;
+                border-left: 2px solid #C1C1C1;
+                border-collapse: collapse;
+                text-align: center;
+                padding: 4px 8px;
+            }
+
+            .instyle {
+                border-top: 2px solid rgb(179, 178, 178);
+                border-bottom: 1px solid rgb(179, 178, 178);
+            }
+
+            .daytitle {
+                width: 75px;
+                background-color: #EEEEEE;
+            }      
+        </style>
+    </head>
+
+    <body>
+        <h3> CEi Conference</h3>
+        <table>
+            <tr>
+                <th rowspan="2" class="daytitle">Day</th>
+                <th colspan="9" class="daytitle">Schedule</th>
+            </tr>
+            <tr>
+                <th colspan="6" class="daytitle">Morning</th>
+                <td rowspan="11" style="font-style: italic; width: 40px;"> L <br> U <br> N <br> C <br> H </td>
+                <th colspan="2" class="daytitle">Afternoon</th>
+            </tr>            
+            <tr>
+                <td rowspan="2" style="width: 75px;">Mon</td>
+                <td rowspan="2" colspan="2" style="border-right: 0px; padding: 2px;">
+                <img src="https://cei.kmitl.ac.th/wp-content/uploads/2024/09/cropped-ceip-fav-1.png" alt="CEi Logo" width="50" height="50"></td>
+                <td rowspan="2" colspan="4" style="border-left: 0px; text-align: left; font-weight: bold;">Opening</td>
+                <td colspan="2" class="instyle">Health Care</td>
+            </tr>
+            <tr>
+                <td class="instyle">HTML 1</td>
+                <td class="instyle">HTML 2</td>
+            </tr>
+            <tr>
+                <td rowspan="3" style="width: 75px">Tue</td>
+                <td colspan="6" style="border-bottom: 2px solid rgb(179, 178, 178); color: blue;"> Smart City</td>
+                <td rowspan="3" colspan="2" style="padding: 0px;"> 
+                    <p>Posters</p>
+                    <hr style="border: 1px solid rgb(179, 178, 178);">
+                    <p style="color: red;">Meet Companies</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="border-bottom: 1px; border-top: 1px solid rgb(179, 178, 178);">CSS 1</td>
+                <td colspan="3" style="border-bottom: 1px; border-top: 1px solid rgb(179, 178, 178);">CSS 2</td>
+            </td>
+            </tr>
+            <tr>
+                <td colspan="6" class="instyle">Business Meeting</td>
+            </tr>
+            <tr style="height: 50px">
+                <td>Wed</td>
+                <td colspan="2">JS 1</td>
+                <td colspan="2">JS 2</td>
+                <td colspan="2">JS 3</td>
+            <td style="background-color: yellow; font-weight: bold;" colspan="2">Closing</td></tr>
+        </table>
+    </body>
+</html>
